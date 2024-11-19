@@ -30,7 +30,7 @@ move_dc_directories() {
   fi
 
   echo "creating tmp dir in: $CACHE_DIR"
-  TMP_DIR=`mktemp -d $CACHE_DIR/dc_backend`
+  TMP_DIR=`mktemp -d $CACHE_DIR/dc_backendXXXXX`
   echo "created tmp dir: $TMP_DIR"
 
   echo "moving backend dir: $BE_PROJECT_PATH to $TMP_DIR"
