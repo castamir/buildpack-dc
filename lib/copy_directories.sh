@@ -41,12 +41,12 @@ move_dc_directories() {
   mkdir -p $TMP_DIR/$TARGET_PATH
   cp -R $FE_PROJECT_PATH/. $TMP_DIR/$TARGET_PATH
 
-#  echo "cleaning build dir: $BUILD_DIR"
-#  rm -rf $BUILD_DIR/*
-#
-#  echo "copying backend dir from cache: $TMP_DIR to build dir $BUILD_DIR"
-#  cp -R $TMP_DIR/. $BUILD_DIR/
-#
-#  echo "cleaning tmp dir: $TMP_DIR"
-#  rm -rf $TMP_DIR
+  echo "cleaning build dir: $BUILD_DIR"
+  rm -rf $BUILD_DIR/*
+
+  echo "copying backend dir from cache: $TMP_DIR to build dir $BUILD_DIR"
+  cp -R $TMP_DIR/. $BUILD_DIR/
+
+  echo "cleaning tmp dir: $TMP_DIR"
+  rm -rf $TMP_DIR
 }
